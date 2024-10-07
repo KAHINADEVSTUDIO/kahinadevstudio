@@ -1,0 +1,9 @@
+// Buttons 
+
+@mixin a-button {
+    font-size: 14.3px !important;
+    font-weight: 600 !important;
+    letter-spacing: $spacing-s;
+    text-transform: $text-transform-uppercase;
+    font-family: $font-subtitle;
+}

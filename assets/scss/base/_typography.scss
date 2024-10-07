@@ -1,0 +1,50 @@
+// Fonts 
+
+$font-title: "Righteous", sans-serif;
+$font-subtitle: "Cairo", sans-serif;
+$font-text: "Tajawal", sans-serif;
+
+// Titles
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+    width: $width-max;
+    word-wrap: break-word;
+    font-family: $font-title;
+}
+
+h1 {
+    font-size: 54px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 40px !important;
+    }
+}
+
+h2 {
+    font-size: 52px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 38px !important;
+    }
+}
+
+h3 {
+    font-size: 50px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 36px !important;
+    }
+}
+
+h4 {
+    font-size: 48px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 34px !important;
+    }
+}

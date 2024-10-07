@@ -1,0 +1,34 @@
+.languages {
+    bottom: 10px;
+    left: 2%;
+
+    .flag {
+        width: $width-flag-icon;
+    }
+
+    .btn-languages {
+        font-weight: 600 !important;
+        padding: 10px 15px !important;
+    }
+
+    .dropdown-menu {
+        padding: 20px;
+        border: $border-none;
+        border-radius: $border-radius-none;
+        background-color: $background-bistre;
+
+        li {
+            a {
+                @include a-button;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: $margin-bottom-bars;
+            }
+        }
+    }
+
+    .language-name-second {
+        color: $color-alabaster !important;
+    }
+}

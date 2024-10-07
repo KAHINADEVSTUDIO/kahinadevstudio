@@ -1,0 +1,34 @@
+// Background 
+
+.background-alabaster {
+    background-color: $background-alabaster;
+}
+
+.background-green {
+    background-color: $background-green;
+}
+
+.background-bronze {
+    background-color: $background-bronze;
+}
+
+.background-russet {
+    background-color: $background-russet;
+}
+
+.background-bistre {
+    background-color: $background-bistre;
+}
+
+// Space 
+
+.flex-between {
+    display: $display-flex;
+    justify-content: $space-between;
+}
+
+// Position 
+
+.position-fixed {
+    position:  $position-fixed;;
+} 

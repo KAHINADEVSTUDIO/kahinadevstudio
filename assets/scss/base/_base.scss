@@ -1,0 +1,18 @@
+@import "../base/typography.scss";
+
+* {
+    margin: $initial;
+    padding: $initial;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    box-sizing: $border-box;
+}
+
+body {
+    font-family: $font-text;
+
+    img {
+        width: $width-max;
+        object-fit: cover;
+    }
+}

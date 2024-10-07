@@ -1,0 +1,19 @@
+.btn {
+    border-radius: $border-radius-none;
+    transition: $transition-ease-in-out !important;
+    padding: 15px 25px;
+    border: $border-none;
+    @include a-button;
+}
+
+.btn-dark {
+    color: $color-bronze;
+    background-color: $background-bistre;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-bistre;
+        background-color: $background-bronze;
+    }
+}

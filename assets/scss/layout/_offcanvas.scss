@@ -1,0 +1,64 @@
+.offcanvas {
+    padding: 30px;
+    border: $border-none !important;
+
+    h5,
+    span,
+    p,
+    a {
+        color: $color-bistre;
+    }
+
+    .close-canvas {
+        padding: $initial !important;
+        font-size: 25px !important;
+    }
+
+    .offcanvas-body {
+
+        .menu {
+            margin-top: 25px;
+            .nav-link {
+                margin-bottom: $margin-bottom-canvas;
+            }
+    
+            .nav-link,
+            .dropdown-item {
+                font-weight: 500;
+                font-size: 18.5px;
+                font-family: $font-text;
+                transition: $transition-ease-in-out-animation !important;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    padding: 10px 0px 10px 10px;
+                    background-color: $background-green !important;
+                }
+    
+                .icon-plus {
+                    margin-left: 2%;
+                }
+            }
+    
+            .btn-toggle-nav {
+                margin-left: 5%;
+    
+                .dropdown-item {
+                    font-size: 18px !important;
+                    margin-bottom: $margin-bottom-canvas;
+                }
+            }
+        }
+
+        .languages {
+            bottom: 30px !important;
+            left: 48px !important;
+            position: $position-absolute !important;
+
+            .btn-languages {
+                padding: $initial !important;
+            }
+        }
+    }
+}
