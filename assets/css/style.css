@@ -1,3 +1,23 @@
+.color-alabaster {
+  color: #F3EDE2FF;
+}
+
+.color-green {
+  color: #7A8665FF;
+}
+
+.background-bronze {
+  color: #C8893FFF;
+}
+
+.color-russet {
+  color: #7C4C21FF !important;
+}
+
+.color-bistre {
+  color: #392B1AFF !important;
+}
+
 .background-alabaster {
   background-color: #F3EDE2FF;
 }
@@ -25,6 +45,57 @@
 
 .position-fixed {
   position: fixed;
+}
+
+.padding-none {
+  padding: 0px !important;
+}
+
+.padding-section {
+  padding: 10rem 0rem;
+}
+
+@media screen and (max-width: 767px) {
+  .padding-section-mobile {
+    padding: 5rem 0rem !important;
+  }
+}
+
+.padding-content {
+  padding: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .padding-content {
+    padding: 1rem !important;
+  }
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.margin-xs {
+  margin-top: 1rem;
+}
+
+.margin-s {
+  margin-top: 2rem;
+}
+
+.margin-m {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .margin-lg-tablet {
+    margin: 5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .column-reverse-tablet {
+    flex-direction: column-reverse !important;
+  }
 }
 
 h1,
@@ -72,6 +143,19 @@ h4 {
   h4 {
     font-size: 34px !important;
   }
+}
+
+.subtitle {
+  font-size: 15px !important;
+  font-weight: 700;
+  color: #C8893FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
 }
 
 * {
@@ -137,9 +221,22 @@ h4 {
   }
 }
 
+.subtitle {
+  font-size: 15px !important;
+  font-weight: 700;
+  color: #C8893FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
+}
+
 .header {
   z-index: 999;
-  padding: 0px 2%;
+  padding: 0px 1%;
   position: relative;
 }
 @media screen and (max-width: 1024px) {
@@ -180,10 +277,13 @@ h4 {
 }
 .header .toggler-menu .toggler-bars {
   width: 25px;
-  transition: all 0.5s ease-in-out !important;
+}
+.header .toggler-menu .toggler-bars:hover, .header .toggler-menu .toggler-bars:focus, .header .toggler-menu .toggler-bars:active {
+  transition: all 0.3s ease-in-out !important;
 }
 .header .toggler-menu .toggler-bars:hover .second-bars, .header .toggler-menu .toggler-bars:focus .second-bars, .header .toggler-menu .toggler-bars:active .second-bars {
   width: 25px !important;
+  transition: all 0.3s ease-in-out !important;
 }
 .header .toggler-menu .toggler-bars .bars {
   height: 2px;
@@ -229,14 +329,21 @@ h4 {
   font-weight: 500;
   font-size: 18.5px;
   font-family: "Tajawal", sans-serif;
-  transition: ease-in-out !important;
+  transition: all 0.3s ease-in-out;
 }
 .offcanvas .offcanvas-body .menu .nav-link:hover, .offcanvas .offcanvas-body .menu .nav-link:focus, .offcanvas .offcanvas-body .menu .nav-link:active,
 .offcanvas .offcanvas-body .menu .dropdown-item:hover,
 .offcanvas .offcanvas-body .menu .dropdown-item:focus,
 .offcanvas .offcanvas-body .menu .dropdown-item:active {
-  padding: 10px 0px 10px 10px;
+  color: #F3EDE2FF;
+  padding: 10px 0px 10px 20px;
   background-color: #7A8665FF !important;
+}
+.offcanvas .offcanvas-body .menu .nav-link:hover .icon-plus, .offcanvas .offcanvas-body .menu .nav-link:focus .icon-plus, .offcanvas .offcanvas-body .menu .nav-link:active .icon-plus,
+.offcanvas .offcanvas-body .menu .dropdown-item:hover .icon-plus,
+.offcanvas .offcanvas-body .menu .dropdown-item:focus .icon-plus,
+.offcanvas .offcanvas-body .menu .dropdown-item:active .icon-plus {
+  color: #F3EDE2FF;
 }
 .offcanvas .offcanvas-body .menu .nav-link .icon-plus,
 .offcanvas .offcanvas-body .menu .dropdown-item .icon-plus {
@@ -258,9 +365,31 @@ h4 {
   padding: 0px !important;
 }
 
+.card {
+  border-radius: 0px;
+}
+
+.card-latest {
+  padding: 2rem;
+  border: 1px solid #392B1AFF;
+}
+.card-latest .control-prev-icon,
+.card-latest .control-next-icon {
+  font-size: 18px;
+  color: #F3EDE2FF;
+}
+.card-latest .control-prev-icon:hover, .card-latest .control-prev-icon:focus, .card-latest .control-prev-icon:active,
+.card-latest .control-next-icon:hover,
+.card-latest .control-next-icon:focus,
+.card-latest .control-next-icon:active {
+  font-size: 25px;
+  color: #C8893FFF;
+  transition: all 0.3s ease-in-out;
+}
+
 .btn {
   border-radius: 0px;
-  transition: all 0.5s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
   padding: 15px 25px;
   border: none;
   font-size: 14.3px !important;
@@ -271,24 +400,32 @@ h4 {
 }
 
 .btn-dark {
-  color: #C8893FFF;
+  color: #F3EDE2FF;
   background-color: #392B1AFF;
 }
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #F3EDE2FF;
+  background-color: #7C4C21FF;
+}
+
+.btn-border-dark {
   color: #392B1AFF;
-  background-color: #C8893FFF;
+  border: 1px solid #392B1AFF;
+}
+.btn-border-dark:hover, .btn-border-dark:focus, .btn-border-dark:active {
+  color: #F3EDE2FF;
+  background-color: #7A8665FF;
 }
 
 .languages {
   bottom: 10px;
-  left: 2%;
+  left: 1%;
 }
 .languages .flag {
   width: 20px;
 }
 .languages .btn-languages {
   font-weight: 600 !important;
-  padding: 10px 15px !important;
 }
 .languages .dropdown-menu {
   padding: 20px;
@@ -308,6 +445,131 @@ h4 {
 }
 .languages .language-name-second {
   color: #F3EDE2FF !important;
+}
+
+.moving {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 1rem !important;
+}
+@media screen and (max-width: 767px) {
+  .moving {
+    padding: 1rem !important;
+  }
+}
+.moving .moving-inner {
+  white-space: nowrap;
+  display: flex;
+  animation: moving 10s linear infinite;
+}
+.moving .moving-inner .moving-text {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Cairo", sans-serif;
+}
+.moving .moving-inner .moving-text img {
+  width: 32px;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.presentation-list {
+  text-align: center;
+  margin-top: 3rem;
+}
+.presentation-list .presentation-li {
+  padding: 2rem 1rem;
+  border-top: 1px solid #392B1AFF !important;
+  border-bottom: 1px solid #392B1AFF !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.presentation-list .presentation-li:hover, .presentation-list .presentation-li:focus, .presentation-list .presentation-li:active {
+  padding: 2.5rem;
+  background-color: #392B1AFF;
+}
+.presentation-list .presentation-li:hover h4, .presentation-list .presentation-li:focus h4, .presentation-list .presentation-li:active h4 {
+  color: #7C4C21FF !important;
+}
+.presentation-list .presentation-li:hover p, .presentation-list .presentation-li:focus p, .presentation-list .presentation-li:active p {
+  display: block !important;
+}
+.presentation-list .presentation-li h4 {
+  color: #392B1AFF !important;
+}
+.presentation-list .presentation-li P {
+  display: none;
+}
+.presentation-list .presentation-li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .presentation-list .presentation-li:not(:last-child) {
+    margin-bottom: 1rem !important;
+  }
+}
+
+.intro img {
+  height: 90vh;
+}
+@media screen and (max-width: 1024px) {
+  .intro img {
+    height: 45vh;
+    margin-top: 2rem;
+  }
+}
+
+.presentation-services .flower,
+.contact-section .flower {
+  width: 20%;
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  .presentation-services .flower,
+.contact-section .flower {
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .presentation-services .flower,
+.contact-section .flower {
+    width: 40%;
+  }
+}
+.presentation-services .flower-one,
+.contact-section .flower-one {
+  left: 0;
+  margin-top: -15%;
+}
+@media screen and (max-width: 767px) {
+  .presentation-services .flower-one,
+.contact-section .flower-one {
+    margin-top: -56% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .presentation-services .flower-one,
+.contact-section .flower-one {
+    margin-top: -36%;
+  }
+}
+.presentation-services .flower-two,
+.contact-section .flower-two {
+  right: 0;
+  margin-top: 0%;
+}
+@media screen and (max-width: 767px) {
+  .presentation-services .flower-two,
+.contact-section .flower-two {
+    margin-top: 9% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

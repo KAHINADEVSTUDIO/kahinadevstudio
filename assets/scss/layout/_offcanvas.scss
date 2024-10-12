@@ -2,6 +2,8 @@
     padding: 30px;
     border: $border-none !important;
 
+    // Colors
+
     h5,
     span,
     p,
@@ -9,41 +11,51 @@
         color: $color-bistre;
     }
 
+    // Close button
+
     .close-canvas {
         padding: $initial !important;
         font-size: 25px !important;
     }
 
+    // Menu
+
     .offcanvas-body {
 
         .menu {
             margin-top: 25px;
+
             .nav-link {
                 margin-bottom: $margin-bottom-canvas;
             }
-    
+
             .nav-link,
             .dropdown-item {
                 font-weight: 500;
                 font-size: 18.5px;
                 font-family: $font-text;
-                transition: $transition-ease-in-out-animation !important;
+                transition: $transition-ease-in-out;
 
                 &:hover,
                 &:focus,
                 &:active {
-                    padding: 10px 0px 10px 10px;
+                    color: $color-alabaster;
+                    padding: 10px 0px 10px 20px;
                     background-color: $background-green !important;
+
+                    .icon-plus {
+                        color: $color-alabaster;
+                    }
                 }
-    
+
                 .icon-plus {
                     margin-left: 2%;
                 }
             }
-    
+
             .btn-toggle-nav {
                 margin-left: 5%;
-    
+
                 .dropdown-item {
                     font-size: 18px !important;
                     margin-bottom: $margin-bottom-canvas;

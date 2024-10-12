@@ -56,6 +56,10 @@ $spacing-xxs: 0.8px;
 $spacing-xs: 1px; 
 $spacing-s: 2px; 
 
+$margin-xs: 1rem;
+$margin-s: 2rem; 
+$margin-m: 3rem;
+
 $margin-bottom-canvas: 10px;
 $margin-bottom-bars: 8px;
 
@@ -69,6 +73,11 @@ $width-logo-mobile: 70%;
 
 $width-flag-icon: 20px;
 
+// Padding 
+
+$padding-none: 0px;
+$padding-s: 2rem;
+
 // Transition 
 
 $transition-all: all; 
@@ -78,7 +87,7 @@ $transition-duration-five: 0.5s;
 $transition-ease-in-out-animation: ease-in-out; 
 
 $transition-ease: $transition-all $transition-duration-five $transition-ease-animation; 
-$transition-ease-in-out: $transition-all $transition-duration-five $transition-ease-in-out-animation; 
+$transition-ease-in-out: $transition-all $transition-duration-three $transition-ease-in-out-animation; 
 
 // Flexbox & Justification 
 
@@ -94,4 +103,16 @@ $border-radius-none: $initial;
 
 $align-center: center;
 $align-justify: justify;
+$font-size-text: 20px;
+$padding-content-mobile: 1rem;
+$padding-content-desktop: 3rem;
 $text-transform-uppercase: uppercase;
+
+// Overflow
+
+$overflow-hidden: hidden; 
+
+// Moving text 
+
+$moving-size: 18px;
+$padding-moving-text: 2rem 1rem; 

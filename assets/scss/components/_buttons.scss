@@ -7,13 +7,25 @@
 }
 
 .btn-dark {
-    color: $color-bronze;
+    color: $color-alabaster;
     background-color: $background-bistre;
 
     &:hover,
     &:focus,
     &:active {
-        color: $color-bistre;
-        background-color: $background-bronze;
+        color: $color-alabaster;
+        background-color: $background-russet;
+    }
+}
+
+.btn-border-dark {
+    color: $color-bistre;
+    border: 1px solid $color-bistre;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-alabaster;
+        background-color: $color-green;
     }
 }

@@ -1,0 +1,37 @@
+.moving {
+    width: $width-max;
+    white-space: $no-wrap;
+    overflow: $overflow-hidden;
+    position: $position-relative;
+    padding: $padding-moving-text !important;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 1rem !important;
+    }
+
+    .moving-inner {
+        white-space: $no-wrap;
+        display: $display-flex;
+        animation: moving 10s linear infinite;
+
+        .moving-text {
+            font-size: $moving-size;
+            text-transform: $text-transform-uppercase;
+            font-family: $font-subtitle;
+
+            img {
+                width: 32px;
+            }
+        }
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

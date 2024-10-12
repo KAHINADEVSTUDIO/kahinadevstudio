@@ -1,0 +1,22 @@
+.card {
+    border-radius: $border-radius-none;
+}
+
+.card-latest {
+    padding: $padding-s;
+    border: 1px solid $color-bistre;
+
+    .control-prev-icon,
+    .control-next-icon {
+        font-size: 18px;
+        color: $color-alabaster;
+
+        &:hover,
+        &:focus,
+        &:active {
+            font-size: 25px;
+            color: $color-bronze;
+            transition: $transition-ease-in-out;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .header {
     z-index: 999;
-    padding: $initial 2%;
+    padding: $initial 1%;
     position: $position-relative;
 
     .container-fluid {
@@ -44,13 +44,15 @@
 
         .toggler-bars {
             width: $width-bars-menu;
-            transition: $transition-ease-in-out !important;
 
             &:hover,
             &:focus,
             &:active {
+                transition: $transition-ease-in-out !important;
+
                 .second-bars {
                     width: $width-bars-menu !important;
+                    transition: $transition-ease-in-out !important;
                 }
             }
 

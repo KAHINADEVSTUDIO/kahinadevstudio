@@ -1,3 +1,25 @@
+// Colors 
+
+.color-alabaster {
+    color: $color-alabaster;
+}
+
+.color-green {
+    color: $color-green;
+}
+
+.background-bronze {
+    color: $color-bronze;
+}
+
+.color-russet {
+    color: $color-russet !important;
+}
+
+.color-bistre {
+    color: $color-bistre !important;
+}
+
 // Background 
 
 .background-alabaster {
@@ -32,3 +54,63 @@
 .position-fixed {
     position:  $position-fixed;;
 } 
+
+// Padding 
+
+.padding-none {
+    padding: $padding-none !important;
+}
+
+.padding-section {
+    padding: 10rem 0rem;
+}
+
+.padding-section-mobile {
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 5rem 0rem !important;
+    }
+}
+
+// Text 
+
+.padding-content {
+    padding: $padding-content-desktop;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: $padding-content-mobile !important;        
+    }
+}
+
+// Align 
+
+.align-justify {
+    text-align: $align-justify;
+}
+
+// Margin 
+
+.margin-xs {
+    margin-top: $margin-xs;
+}
+
+.margin-s {
+    margin-top: $margin-s;
+}
+
+.margin-m {
+    margin-top: $margin-m;
+}
+
+.margin-lg-tablet {
+    @media screen and (max-width: $breakpoint-tablet) {
+        margin: 5rem 0rem;
+    }
+}
+
+// Row & Column 
+
+.column-reverse-tablet {
+    @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column-reverse !important;
+    }
+}
