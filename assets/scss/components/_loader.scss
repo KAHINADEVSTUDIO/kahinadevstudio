@@ -1,0 +1,68 @@
+$font-size-base: 1.5rem;
+$font-size-large: 3rem; 
+$transition-speed: 0.5s;
+
+// Mixin responsive design 
+
+@mixin responsive-font($min-size, $max-size) {
+    font-size: $min-size;
+
+    @media screen and (min-width: $breakpoint-tablet-sm) {
+        font-size: $max-size;
+    }
+}
+
+// Base
+
+#loader {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: $display-flex;
+    align-items: center;
+    justify-content: center;
+    position: $position-fixed;
+    background-color: $background-bistre;
+    transition: opacity $transition-speed ease-in-out;
+}
+
+#count,
+#site-name {
+    color: $color-alabaster;
+    font-family: $font-title;
+}
+
+#count {
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+    @include responsive-font(2rem, 4rem)
+}
+
+#site-name {
+    margin-left: 25px;
+    @include responsive-font(1.5rem, 3rem); 
+    transition: opacity $transition-speed ease-in-out;
+}
+
+.content {
+    display: $display-none;
+}
+
+// Animation 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// Media queries 
+
+@media screen and (max-width: 767px) {
+    #loader {
+        padding: 1rem;
+    }
+}

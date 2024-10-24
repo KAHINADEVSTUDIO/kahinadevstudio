@@ -21,7 +21,7 @@ h1 {
     font-size: 54px;
 
     @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 40px !important;
+        font-size: 34px !important;
     }
 }
 
@@ -29,7 +29,7 @@ h2 {
     font-size: 52px;
 
     @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 38px !important;
+        font-size: 33px !important;
     }
 }
 
@@ -37,7 +37,7 @@ h3 {
     font-size: 50px;
 
     @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 }
 
@@ -45,7 +45,7 @@ h4 {
     font-size: 48px;
 
     @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 34px !important;
+        font-size: 33px !important;
     }
 }
 
@@ -54,6 +54,7 @@ h4 {
     font-weight: 700;
     color: $color-bronze;
     letter-spacing: $spacing-xs;
+    font-family: $font-subtitle;
     text-transform: $text-transform-uppercase;
 }
 

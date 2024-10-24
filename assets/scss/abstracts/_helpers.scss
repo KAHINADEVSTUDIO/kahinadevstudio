@@ -1,15 +1,15 @@
 // Colors 
 
 .color-alabaster {
-    color: $color-alabaster;
+    color: $color-alabaster !important;
 }
 
 .color-green {
-    color: $color-green;
+    color: $color-green !important;
 }
 
-.background-bronze {
-    color: $color-bronze;
+.color-bronze {
+    color: $color-bronze !important;
 }
 
 .color-russet {
@@ -99,6 +99,12 @@
 
 .margin-m {
     margin-top: $margin-m;
+}
+
+.margin-s-top-mobile {
+    @media screen and (max-width: $breakpoint-tablet) {
+        margin-top: $margin-s;
+    }
 }
 
 .margin-lg-tablet {

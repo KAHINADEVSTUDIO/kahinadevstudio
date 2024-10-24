@@ -1,6 +1,6 @@
 .btn {
     border-radius: $border-radius-none;
-    transition: $transition-ease-in-out !important;
+    transition: $transition-ease !important;
     padding: 15px 25px;
     border: $border-none;
     @include a-button;
@@ -28,4 +28,22 @@
         color: $color-alabaster;
         background-color: $color-green;
     }
+}
+
+.btn-border-light {
+    color: $color-alabaster;
+    border: 1px solid $color-alabaster;
+    background-color: $background-transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-alabaster;
+        border: none !important;
+        background-color: $color-green;
+    }
+}
+
+.btn-max {
+    width: 100%;
 }
